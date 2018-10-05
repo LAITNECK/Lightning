@@ -56,13 +56,14 @@ local taha = {
 'هلو',
 'لا هله'
 }      
-send(msg.chat_id_, msg.id_, 1, ''..taha[math.random(#taha)]..'', 1, 'md')   end
+send(msg.chat_id_, msg.id_, 1, ''..taha[math.random(#keko)]..'', 1, 'md')
+end
 if text == "هلو" then     
 local taha = {
 'هلو',
 'لا هله'
 }      
-send(msg.chat_id_, msg.id_, 1, ''..taha[math.random(#taha)]..'', 1, 'md')   end
+send(msg.chat_id_, msg.id_, 1, ''..taha[math.random(#keko)]..'', 1, 'md')
   end
   end
   if(text and text == 'تفعيل العشوائي') and is_owner(msg) then
@@ -73,7 +74,7 @@ send(msg.chat_id_, msg.id_, 1, ''..taha[math.random(#taha)]..'', 1, 'md')   end
    database:del('MAX:'..bot_id..'rep:mute'..msg.chat_id_)
   end
   end
-  if(text and text == 'تعطيل اللعبه') and is_owner(msg) then
+  if(text and text == 'تعطيل العشوائي') and is_owner(msg) then
     if database:get('MAX:'..bot_id..'rep:mute'..msg.chat_id_) then
   send(msg.chat_id_, msg.id_, 1, '✔┇تم تعطيل الردود العشؤايه', 1, 'md')
   else
