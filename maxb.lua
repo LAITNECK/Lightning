@@ -51,26 +51,18 @@ end
 local msg = data.message_
 text = msg.content_.text_
 if not database:get('MAX:'..bot_id..'rep:mute'..msg.chat_id_) then
-if text == 'هلو' then
-moody =
-'لا هلا ولا مرحبا😹💔',      
-'"هلاوات حمبي🌚"',      
-'""هلا و💯هلا""',      
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-  end
-if text == 'بوت' then
-moody =
-'راح تبدي المصلحه اهوو احجي شتريد😒',                          
-'"نعم نعمين ثلاث نعمات😹"',                          
-'""ها يبعد دگه گلبي الالكترونيه😹♥️""',                          
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-  end
-if text == 'هاي' then
-moody =
-'بنيه_وووف فدوه لهل انوثه ولد_تف عليك وعلى شواربك اذا عندك شوارب😾',                                              
-'"هايات"',                                              
-'""ئمنوره هايات يحلوه😉♥️""',                                              
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
+if text == "هلو" then     
+local taha = {
+'هلو',
+'لا هله'
+}      
+send(msg.chat_id_, msg.id_, 1, ''..taha[math.random(#taha)]..'', 1, 'md')   end
+if text == "هلو" then     
+local taha = {
+'هلو',
+'لا هله'
+}      
+send(msg.chat_id_, msg.id_, 1, ''..taha[math.random(#taha)]..'', 1, 'md')   end
   end
   end
   if(text and text == 'تفعيل العشوائي') and is_owner(msg) then
